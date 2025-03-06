@@ -5,8 +5,8 @@ interface FooterProps {}
 
 export default function Footer({}: FooterProps) {
   return (
-    <footer className="relative bg-[#f8fbfa]">
-      <div className="w-full border-t-2 border-dashed border-[#00D493] pt-12"></div>
+    <footer className="relative py-20 bg-[#F7FAFB]">
+      <div className="w-full border-t-2 border-dashed border-[#00D493] md:pt-24"></div>
 
       <div className="max-w-[1600px] mx-auto my-12 px-4">
         <div className="rounded-2xl p-8 md:p-12 relative overflow-hidden">
@@ -39,7 +39,7 @@ export default function Footer({}: FooterProps) {
         </div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-4 pb-12">
+      <div className="max-w-[1600px] mx-auto px-4">
         {/* Logo */}
         <div className="mb-4">
           <h1 className="text-4xl font-bold text-[#00C689]">Week&</h1>

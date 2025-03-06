@@ -4,3 +4,6 @@
   -webkit-text-stroke: 1px #00C689;
 }
 
+html {
+  scroll-behavior: smooth;
+}

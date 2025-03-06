@@ -42,9 +42,9 @@ export default function DestinationCard({
   return (
     <div className="bg-white rounded-3xl shadow-xl overflow-hidden w-full h-auto">
       <div className="relative p-3">
-        <div className="bg-white rounded-full py-1 px-3 flex items-center gap-2 z-10">
+        <div className="bg-white rounded-full py-1 flex items-center gap-2 z-10">
           <MapPin size={20} className="text-[#00D493]" />
-          <span className="font-medium text-gray-800">{location}</span>
+          <span className="font-bold text-gray-800">{location}</span>
         </div>
 
         <div className="h-72 relative rounded-2xl overflow-hidden">
@@ -62,7 +62,7 @@ export default function DestinationCard({
         <div className="flex justify-between">
           <div className="flex flex-col">
             <h3 className="text-2xl font-bold text-gray-800 mb-1">{title}</h3>
-            <p className="text-sm text-gray-500 mb-4">{duration}</p>
+            <p className="text-sm text-gray-400 mb-4">{duration}</p>
           </div>
           <div className="flex items-center gap-2">
             <button className="bg-slate-200 rounded-full p-2 text-[#00D493] cursor-pointer">

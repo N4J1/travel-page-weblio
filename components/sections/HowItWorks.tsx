@@ -4,7 +4,7 @@ interface HowItWorksProps {}
 
 export default function HowItWorks({}: HowItWorksProps) {
   return (
-    <div className="bg-white border-t-[#00D493] border-t-2 border-dashed py-10 lg:py-16 mt-10 relative z-10">
+    <div className="bg-[#F7FAFB] border-t-[#00D493] border-t-2 border-dashed py-10 lg:py-16 mt-10 relative z-10">
       <div className="max-w-[1600px] w-full mx-auto px-4 py-24 lg:py-28 border-b-[#00D493] border-b-2 border-dashed">
         <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-8 text-left text-[#00C689]">
           Réservez votre prochain <br /> Week-end en toute <br /> Simplicité
@@ -30,7 +30,7 @@ export default function HowItWorks({}: HowItWorksProps) {
                   <h3 className="text-[#A29587] text-5xl font-bold">1</h3>
                 </div>
               </div>
-              <h1 className="text-[#A29587] text-2xl font-bold w-full text-center lg:text-left h-full bg-white">
+              <h1 className="text-[#A29587] text-2xl font-bold w-full text-center lg:text-left h-full bg-[#F7FAFB]">
                 Indiquez vos <br /> souhaits pour le <br /> week-end
               </h1>
             </div>
@@ -49,7 +49,7 @@ export default function HowItWorks({}: HowItWorksProps) {
                   <h3 className="text-[#79747E] text-5xl font-bold">2</h3>
                 </div>
               </div>
-              <h1 className="text-[#79747E] text-2xl font-bold w-full text-center lg:text-left h-full bg-white">
+              <h1 className="text-[#79747E] text-2xl font-bold w-full text-center lg:text-left h-full bg-[#F7FAFB]">
                 Trouvez votre <br /> week-end idéal en <br /> quelques minutes
               </h1>
             </div>
@@ -68,7 +68,7 @@ export default function HowItWorks({}: HowItWorksProps) {
                   <h3 className="text-[#504539] text-5xl font-bold">3</h3>
                 </div>
               </div>
-              <h1 className="text-[#504539] text-2xl font-bold w-full text-center lg:text-left h-full bg-white">
+              <h1 className="text-[#504539] text-2xl font-bold w-full text-center lg:text-left h-full bg-[#F7FAFB]">
                 Réservez, partez, <br /> profitez !
               </h1>
             </div>

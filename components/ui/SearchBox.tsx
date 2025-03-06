@@ -10,7 +10,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({}) => {
   const cities = ["Paris", "Toulon", "Lyon", "Marseille", "Nice"]; // Example city options
 
   return (
-    <div className="relative w-full max-w-[1700px] mx-auto bg-white rounded-2xl py-6 px-6 md:px-10 shadow-xl">
+    <div className="relative w-full max-w-[1700px] mx-auto bg-white rounded-2xl py-7 px-6 md:px-10 shadow-xl">
       <div className="flex flex-col xl:flex-row items-stretch gap-4 md:gap-7">
         <div className="flex-1 lg:flex-[40%]">
           <CityDropdown label="Où va-t-on ?" options={cities} />

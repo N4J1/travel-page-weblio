@@ -4,12 +4,12 @@ interface PopularProps {}
 
 export default function Popular({}: PopularProps) {
   return (
-    <div className="max-w-[1600px] w-full mx-auto px-4 md:px-8 py-10 lg:py-16 relative z-10">
+    <div className="max-w-[1600px] w-full mx-auto px-4 md:px-8 py-10 lg:py-16 relative z-10 bg-[#F7FAFB]">
       <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-8 text-left text-[#00C689]">
         Nos Week& <br /> Populaires
       </h2>
       <h2
-        className="text-3xl md:text-5xl lg:text-8xl text-end font-bold mb-8 text-transparent outer-stroke-text absolute -top-[4%] md:-top-[7%] lg:-top-[12%] right-0 bg-white px-4 py-2"
+        className="text-3xl md:text-5xl lg:text-8xl text-end font-bold mb-8 text-transparent outer-stroke-text absolute -top-[4%] md:-top-[7%] lg:-top-[12%] right-0 bg-[#F7FAFB] px-4 py-2"
         style={{ fontFamily: "sans-serif" }}
       >
         Week
