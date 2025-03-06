@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+import { FacebookIcon, InstagramIcon } from "lucide-react";
 
 interface FooterProps {}
 
