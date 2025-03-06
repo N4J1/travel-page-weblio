@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { DateRange, RangeKeyDict } from "react-date-range";
+import { DateRange, RangeKeyDict, Range } from "react-date-range";
 import { format, addDays } from "date-fns";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
@@ -14,7 +14,7 @@ const DateRangeInput: React.FC<DateRangeInputProps> = ({ label }) => {
   const [focused, setFocused] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [dateRange, setDateRange] = useState({
+  const [dateRange, setDateRange] = useState<Range>({
     startDate: new Date(),
     endDate: addDays(new Date(), 0),
     key: "selection",
@@ -23,8 +23,8 @@ const DateRangeInput: React.FC<DateRangeInputProps> = ({ label }) => {
   const calendarRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLDivElement>(null);
 
-  const formattedStartDate = format(dateRange.startDate, "dd MMM yy");
-  const formattedEndDate = format(dateRange.endDate, "dd MMM yy");
+  const formattedStartDate = dateRange.startDate ? format(dateRange.startDate, "dd MMM yy") : "";
+  const formattedEndDate = dateRange.endDate ? format(dateRange.endDate, "dd MMM yy") : "";
   const displayValue = `${formattedStartDate} - ${formattedEndDate}`;
 
   const handleSelect = (ranges: RangeKeyDict) => {
@@ -103,7 +103,7 @@ const DateRangeInput: React.FC<DateRangeInputProps> = ({ label }) => {
             direction="horizontal"
             showDateDisplay={false}
             showMonthAndYearPickers={true}
-            rangeColors={["#f3a71c"]}
+            rangeColors={["#00D493"]}
             className="p-2"
             minDate={new Date()}
           />
